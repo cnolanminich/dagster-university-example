@@ -6,21 +6,35 @@ annotated-types==0.6.0
     # via pydantic
 certifi==2024.2.2
     # via requests
+cffi==1.16.0
+    # via cryptography
 charset-normalizer==3.3.2
     # via requests
 click==8.1.7
-    # via dagster
+    # via
+    #   dagster
+    #   typer
+colorama==0.4.6
+    # via typer
 coloredlogs==14.0
     # via dagster
 croniter==2.0.2
     # via dagster
+cryptography==42.0.5
+    # via pyjwt
 dagster==1.6.6
+    # via dagster-cloud
+dagster-cloud==1.6.6
+dagster-cloud-cli==1.6.6
+    # via dagster-cloud
 dagster-pipes==1.6.6
     # via dagster
 docstring-parser==0.15
     # via dagster
 fsspec==2024.2.0
     # via universal-pathlib
+github3-py==4.0.1
+    # via dagster-cloud-cli
 grpcio==1.62.0
     # via
     #   dagster
@@ -44,23 +58,34 @@ markupsafe==2.1.5
 mdurl==0.1.2
     # via markdown-it-py
 packaging==23.2
-    # via dagster
+    # via
+    #   dagster
+    #   dagster-cloud-cli
 pendulum==3.0.0
     # via dagster
+pex==2.2.2
+    # via dagster-cloud
+prompt-toolkit==3.0.36
+    # via questionary
 protobuf==4.25.3
     # via
     #   dagster
     #   grpcio-health-checking
+pycparser==2.21
+    # via cffi
 pydantic==2.6.3
     # via dagster
 pydantic-core==2.16.3
     # via pydantic
 pygments==2.17.2
     # via rich
+pyjwt==2.8.0
+    # via github3-py
 python-dateutil==2.8.2
     # via
     #   croniter
     #   dagster
+    #   github3-py
     #   pendulum
     #   time-machine
 python-dotenv==1.0.1
@@ -70,13 +95,27 @@ pytz==2024.1
     #   croniter
     #   dagster
 pyyaml==6.0.1
-    # via dagster
+    # via
+    #   dagster
+    #   dagster-cloud-cli
+questionary==2.0.1
+    # via
+    #   dagster-cloud
+    #   dagster-cloud-cli
 requests==2.31.0
-    # via dagster
+    # via
+    #   dagster
+    #   dagster-cloud
+    #   dagster-cloud-cli
+    #   github3-py
 rich==13.7.1
-    # via dagster
+    # via
+    #   dagster
+    #   typer
 setuptools==69.1.1
     # via dagster
+shellingham==1.5.4
+    # via typer
 six==1.16.0
     # via python-dateutil
 sqlalchemy==2.0.27
@@ -95,6 +134,10 @@ toposort==1.10
     # via dagster
 tqdm==4.66.2
     # via dagster
+typer==0.9.0
+    # via
+    #   dagster-cloud
+    #   dagster-cloud-cli
 typing-extensions==4.10.0
     # via
     #   alembic
@@ -102,11 +145,16 @@ typing-extensions==4.10.0
     #   pydantic
     #   pydantic-core
     #   sqlalchemy
+    #   typer
 tzdata==2024.1
     # via pendulum
 universal-pathlib==0.2.1
     # via dagster
+uritemplate==4.1.1
+    # via github3-py
 urllib3==2.2.1
     # via requests
 watchdog==4.0.0
     # via dagster
+wcwidth==0.2.13
+    # via prompt-toolkit
