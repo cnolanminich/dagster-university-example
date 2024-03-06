@@ -1,4 +1,5 @@
 dagster
+dagster-webserver
 dagster-cloud
 dagster-duckdb
 geopandas
